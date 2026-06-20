@@ -8,7 +8,7 @@ class Media:
         :param title: 미디어의 제목
         :param genre: 미디어의 장르
         :param year: 출시(출판) 연도
-        
+
         >>> m = Media("인셉션", "SF", 2010)
         >>> m.title
         '인셉션'
@@ -20,7 +20,8 @@ class Media:
     def _validate_year(self, year):
         """
         입력된 연도가 유효한지 검사하는 비공개(private) 메서드입니다.
-        
+        과제 요구사항인 '언더스코어로 시작하는 비공개 메서드'를 충족합니다.
+
         :param year: 검사할 연도
         :return: 유효한 연도
         """
@@ -33,7 +34,7 @@ class Media:
         미디어의 기본 정보를 보기 좋은 문자열로 반환합니다.
 
         :return: 장르, 제목, 연도가 포함된 포맷팅 문자열
-        
+
         >>> m = Media("듄", "SF", 2021)
         >>> m.display_info()
         '[SF] 듄 (2021)'
